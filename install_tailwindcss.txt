@@ -1,0 +1,26 @@
+1. Open command prompt
+2. write - " npm init -y "
+	=> creat package.json file
+3. write - " npm install -D tailwindcss "
+	=> creat package-lock.json file
+	=> creat node_modules folder
+4. write - " npx tailwindcss init "
+	=> creat tailwind.config.js file
+5. create .\src\tailwind.css
+	=> insert in tailwind.css file
+		=> 	@tailwind base;
+			@tailwind components;
+			@tailwind utilities;
+5. create .\output\tailwind.css
+6. create .\.vscode\settings.json
+	=> insert in settings.json file
+		=> 	{
+  			"css.validate": false,
+  			"tailwindCSS.emmetCompletions": true
+			}
+7. insert in package.json file
+		=> "scripts": {
+    		"build": "tailwindcss -i ./src/tailwind.css -o ./output/tailwind.css -w"
+  		},
+
+8. Lastly write - " npm run build "
